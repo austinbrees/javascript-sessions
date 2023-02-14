@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title> Sloppy web page </title>
+    </head>
+         <body> 
+            <h1> Header 1 <h1>
+            <h2> Header 2 <h2>
+             <p> This is text </p>
+             <p> Here is some more text <p>
+          <a href="test2.html">Link text <a>
+         </body>
+  <html>

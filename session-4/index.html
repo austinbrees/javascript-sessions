@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .greenveggies{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="Salutaion"> Test Page</h1>
+    <p> This is some sample text </p>
+    <p>Vegetables</p>
+    <ul>
+        <li class="greenveggies">Lettuce</li>
+        <li id="tomato">Tomato</li>
+        <li id="carrot">Carrot</li>
+        <li class="greenveggies">Spinach</li>
+        <li class="greenveggies">Broccoli</li>
+    </ul>
+    <script>
+        const name = "Carlos"
+        let node = document.getElementById("Salutaion");
+        node.textContent = "Hello, " + name
+    </script>
+    <script>
+        let gv = document.getElementsByClassName("greenveggies")
+        for(let v of gv){
+            console.log(v.textContent)
+            v.textContent += "(GV)"
+            v.style.fontWeight = "bold";
+        }
+        document.getElementById("tomato").style.color= 'red';
+        document.getElementById("carrot").style.color="orange";
+    </script>
+</body>
+</html>
